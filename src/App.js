@@ -7,19 +7,36 @@ import { Projects } from './components/Projects';
 import { AboutMe } from './components/AboutMe'
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Hero />
-      <Welcome />
-      <Skills />
-      <Projects />
-      <AboutMe />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <NavBar />
+        <Hero />
+        <Welcome />
+        <Skills />
+        <Projects />
+        <AboutMe />
+        <Contact />
+        <Footer />
+        <Hero />
+        <Welcome />
+        <Skills />
+        <Projects />
+        <AboutMe />
+        <Contact />
+        <Footer />
+        <Hero />
+        <Welcome />
+        <Skills />
+        <Projects />
+        <AboutMe />
+        <Contact />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

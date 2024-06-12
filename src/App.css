@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+/* Costom Fonts */
+@font-face {
+  font-family: Inconsolata;
+  src: url('./assets/font/Inconsolata-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url('./assets/font/Inconsolata-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url('./assets/font/Inconsolata-ExtraBold.ttf');
+  font-weight: 800;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  /* include padding and border within the element's total width and height */
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  /* fixed headers */
+  scroll-padding-top: 75px;
+
+}
+body{
+  font-family: 'Inconsolata', 'sans-serif' !important;
+  font-weight: 400;
+  /* prevents horizontal scrolling by hiding any content that overflows */
+  overflow-x: hidden;
+  /* you can adjust its position using the top, right, bottom, and left properties */
+  position: relative;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+p,a,li,button,ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+button {
+  border: 0;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* NavBar */
+.navbar {
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.me-auto {
+  margin-left: 20px;
+}
+
+.nav-link {
+  margin-right: 40px;
+  color: black;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.navbar-brand {
+  justify-content: center;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+
+.social-icon {
+  /*  inline-block elements very useful for creating flexible layouts, 
+  especially when you need elements to be displayed inline 
+  but also want to control their dimensions and spacing. */
+  /* inline-block elements are often used for things like navigation menus */
+  display: inline-block;
+}
+
+.social-icon a{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #CFC2B1;
+  margin-right: 6px;
+  /* ??? */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icon img {
+  width: 50%;
+  height: auto;
 }

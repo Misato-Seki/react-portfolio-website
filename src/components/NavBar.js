@@ -5,12 +5,30 @@ import Logo from '../assets/img/logo_cat.svg';
 import LinkedIn from '../assets/img/linkedin.svg';
 import GitHub from '../assets/img/github.svg';
 import { HashLink } from 'react-router-hash-link';
-
+import { useEffect, useState } from 'react';
 
 function NavBar() {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onClick = () => {
+            if(window.scrollY > 50){
+                setScrolled(true);
+            }else{
+                setScrolled(false);
+            }
+        }
+
+        window.addEventListener('scroll', onClick);
+        // Cleanup function to remove the event listener
+        return () => window.removeEventListener('scroll', onClick);
+    },[])
     return (
-        <Navbar expand="md" className="bg-body-tertiary">
+        <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
+            <Navbar.Brand href="#home">
+                <img src={Logo} className="d-inline-block align-top" alt="logo"/>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className='navbar-toggle-icon'></span>
             </Navbar.Toggle>
@@ -21,9 +39,6 @@ function NavBar() {
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#aboutMe">About Me</Nav.Link>
             </Nav>
-            <Navbar.Brand href="#home">
-                <img src={Logo} className="d-inline-block align-top" alt="logo"/>
-            </Navbar.Brand>
             <span className='navbar-text'>
                 <div className='social-icon'>
                     <a href='#'><img src={LinkedIn} alt="linkedin-logo" /></a>

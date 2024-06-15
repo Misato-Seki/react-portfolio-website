@@ -1,5 +1,6 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import heroImg from '../assets/img/hero.png';
 // import TrackVisibility from "react-on-screen";
 
 function Hero() {
@@ -22,7 +23,14 @@ function Hero() {
     return (
         <section className="hero" id="home">
             <Container>
-                <h1><span className="wrap">{text}</span></h1>
+                <Row className="align-items-center">
+                    <Col xs={12} md={6} xl={7}>
+                        <h1><span className="wrap">{text}</span></h1>
+                    </Col>
+                    <Col xs={12} md={6} xl={5}>
+                        <img src={heroImg} alt="hero-img"/>
+                    </Col>
+                </Row>
             </Container>
         </section>
     )

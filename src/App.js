@@ -8,6 +8,8 @@ import { AboutMe } from './components/AboutMe'
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

@@ -26,9 +26,6 @@ function NavBar() {
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-            <Navbar.Brand href="#home">
-                <img src={Logo} className="d-inline-block align-top" alt="logo"/>
-            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className='navbar-toggle-icon'></span>
             </Navbar.Toggle>
@@ -39,6 +36,9 @@ function NavBar() {
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#aboutMe">About Me</Nav.Link>
             </Nav>
+            <Navbar.Brand href="#home">
+                <img src={Logo} className="d-inline-block align-top" alt="logo"/>
+            </Navbar.Brand>
             <span className='navbar-text'>
                 <div className='social-icon'>
                     <a href='#'><img src={LinkedIn} alt="linkedin-logo" /></a>

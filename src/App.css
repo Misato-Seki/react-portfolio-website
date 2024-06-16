@@ -25,8 +25,7 @@
 html {
   scroll-behavior: smooth;
   /* fixed headers */
-  scroll-padding-top: 75px;
-
+  /* scroll-padding-top: 75px; */
 }
 body{
   font-family: 'Inconsolata', 'sans-serif' !important;
@@ -62,26 +61,20 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* NavBar */
-.navbar {
-  padding: 10px;
+nav.navbar {
+  padding: 18px 0;
   position: fixed;
   width: 100%;
-  z-index: 9999;
   top: 0;
-  background-color: transparent;
-}
-
-.navbar.scrolled {
-  padding: 0;
+  z-index: 9999;
+  transition: 0.32s ease-in-out;
   background-color: white;
 }
 
-.navbar.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar.scrolled {
+  padding: 0px 0;
+  opacity: 90%;
 }
-
 
 .nav-link {
   margin-right: 40px;
@@ -93,8 +86,9 @@ input:focus, textarea:focus, select:focus {
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
+  position: absolute; /* Position absolutely for centering */
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Center it exactly */
 }
 
 .navbar-brand img {
@@ -107,20 +101,12 @@ input:focus, textarea:focus, select:focus {
   align-items: center;
 }
 
-.social-icon {
-  /*  inline-block elements very useful for creating flexible layouts, 
-  especially when you need elements to be displayed inline 
-  but also want to control their dimensions and spacing. */
-  /* inline-block elements are often used for things like navigation menus */
-  display: inline-block;
-}
-
 .social-icon a{
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid #CFC2B1;
-  margin-right: 6px;
+  margin-right: 15px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -188,11 +174,13 @@ input:focus, textarea:focus, select:focus {
 }
 
 
+
+
 /* Hero CSS */
 
 .hero {
   margin-top: 0px;
-  padding: 90px 0 90px 0;
+  padding: 200px 0 90px 0;
   background-color: #CFC2B1;
 
 }
@@ -210,4 +198,25 @@ input:focus, textarea:focus, select:focus {
 
 .wrap {
   border-right: 0.05em solid black;
+}
+
+/* Welcome CSS */
+.welcome {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+.welcome h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.welcome p {
+  font-size: 18px;
+  padding: 10px;
+  max-width: 60%;
 }

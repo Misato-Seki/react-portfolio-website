@@ -1,6 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import Logo from '../assets/img/logo_cat.svg';
 import LinkedIn from '../assets/img/linkedin.svg';
 import GitHub from '../assets/img/github.svg';
@@ -24,7 +22,7 @@ function NavBar() {
         return () => window.removeEventListener('scroll', onClick);
     },[])
     return (
-        <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+        <Navbar expand="xl" className={scrolled ? "scrolled" : ""}>
         <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className='navbar-toggle-icon'></span>

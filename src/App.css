@@ -220,3 +220,95 @@ nav.navbar {
   padding: 10px;
   max-width: 60%;
 }
+
+/* Skills CSS */
+
+.skills {
+  list-style: none;
+  margin-top: 100px;
+}
+
+.skills-slider {
+  background-color: #DDDFD4;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.skills h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.skills h3 {
+  font-size: 18px;
+}
+
+.skills li {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  background-color: white;
+  display: block;
+  height: 20px;
+  border: 1px solid #DDDFD4;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(to bottom, #DDDFD4 0%, #7D8880 100%) ;
+  border-radius: 10px;
+  text-align: right;
+  color: white;
+  padding-right: 10px;
+}
+
+.html-css {
+  width: 90%;
+  animation: html-css 3s;
+}
+
+.javascript {
+  width: 85%;
+  animation: javascript 3s
+}
+
+.react {
+  width: 75%;
+  animation: react 3s
+}
+
+@keyframes html-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}

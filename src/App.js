@@ -23,37 +23,30 @@ function App() {
         <AboutMe />
         <Contact />
         <Footer />
-        <Skills />
         <Projects />
         <AboutMe />
         <Contact />
         <Footer />
-        <Skills />
         <Projects />
         <AboutMe />
         <Contact />
         <Footer />
-        <Skills />
         <Projects />
         <AboutMe />
         <Contact />
         <Footer />
-        <Skills />
         <Projects />
         <AboutMe />
         <Contact />
         <Footer />
-        <Skills />
         <Projects />
         <AboutMe />
         <Contact />
         <Footer />
-        <Skills />
         <Projects />
         <AboutMe />
         <Contact />
         <Footer />
-        <Skills />
         <Projects />
         <AboutMe />
         <Contact />

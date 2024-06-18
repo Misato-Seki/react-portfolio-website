@@ -228,12 +228,6 @@ nav.navbar {
   margin-top: 100px;
 }
 
-.skills-slider {
-  background-color: #DDDFD4;
-  border-radius: 50px;
-  width: 100%;
-}
-
 .skills h1 {
   font-weight: 700;
   font-size: 48px;
@@ -247,6 +241,7 @@ nav.navbar {
 
 .skills li {
   margin-bottom: 20px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -273,42 +268,18 @@ nav.navbar {
 
 .html-css {
   width: 90%;
-  animation: html-css 3s;
+  /* animation: html-css 3s; */
 }
 
 .javascript {
   width: 85%;
-  animation: javascript 3s
 }
 
-.react {
-  width: 75%;
-  animation: react 3s
-}
-
-@keyframes html-css {
+/* @keyframes html-css {
   0% {
     width: 0%;
   }
   100% {
     width: 90%;
   }
-}
-
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-@keyframes react {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
+} */

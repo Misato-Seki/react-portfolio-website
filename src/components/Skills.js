@@ -25,11 +25,11 @@ function Skills() {
         }
     };
     return (
-        <Container>
+        <Container className="skills" id="skills">
+            <h1>Skills</h1>
             <TrackVisibility>
             {({ isVisible }) =>
-            <div className={ isVisible ? "skills animate__animated animate__fadeInUp" : "skills" } id="skills">
-                <h1>Skills</h1>
+            <div className={ isVisible ? "animate__animated animate__fadeInUp" : "" } id="skills">
                 <h2>Front-End</h2>
                 <Carousel responsive={responsive} className="skills-slider">
                     <li>

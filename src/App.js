@@ -22,36 +22,7 @@ function App() {
         <Projects />
         <AboutMe />
         <Contact />
-        <Footer />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
-        
+        <Footer />        
       </div>
     </BrowserRouter>
   );

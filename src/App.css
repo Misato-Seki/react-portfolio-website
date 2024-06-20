@@ -242,8 +242,6 @@ nav.navbar {
 .skills li {
   margin-bottom: 20px;
   padding-right: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .bar {
@@ -283,3 +281,59 @@ nav.navbar {
     width: 90%;
   }
 } */
+
+/* Projects CSS */
+
+.projects {
+  margin: 100px 100px 0 100px;
+
+}
+
+.projects h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.proj-imgbox {
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid #CFC2B1;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.proj-imgbox::before {
+  content: "";
+  background: linear-gradient(to right, #AA367C, #4A2FBD);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.proj-imgbox:hover::before {
+  height: 100%;
+}
+
+.proj-text {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.proj-imgbox:hover .proj-text {
+  top: 50%;
+  opacity: 1;
+}
+
+
+
+

@@ -1,5 +1,9 @@
 import { ProjectCard } from "./ProjectCard";
 import { Row } from 'react-bootstrap';
+import projectImg1 from '../assets/img/project-portfolio.png';
+import projectImg2 from '../assets/img/project-news.png';
+import projectImg3 from '../assets/img/project-blog.png';
+import projectImg4 from '../assets/img/project-flashcard.png';
 
 
 function Projects() {
@@ -10,7 +14,7 @@ function Projects() {
             discription: "This project is my personal portfolio website, designed to showcase my skills, projects, and experiences.",
             github: "https://github.com/Misato-Seki/react-portfolio-website",
             demo: "#",
-            img: '../assets/img/project-portfolio.png',
+            img: projectImg1,
         },
         {
             title: "News Website",
@@ -18,7 +22,7 @@ function Projects() {
             discription: "This project is a dynamic news website that aggregates and displays the latest news articles from various sources using an API.",
             github: "https://github.com/Misato-Seki/News-API",
             demo: "https://misato-seki.github.io/News-API/",
-            img: '../assets/img/project-news.png',
+            img: projectImg2,
         },
         {
             title: "Blog Website",
@@ -26,7 +30,7 @@ function Projects() {
             discription: "This project is a dynamic news website that aggregates and displays the latest news articles from various sources using an API.",
             github: "https://github.com/Misato-Seki/Portfolio",
             demo: "#",
-            img: '../assets/img/project-blog.png'
+            img: projectImg3,
         },
         {
             title: "Flascard App",
@@ -34,9 +38,10 @@ function Projects() {
             discription: "This project is a flashcard app that allows users to add, edit, and delete cards, following a tutorial video found on YouTube.",
             github: "https://github.com/Misato-Seki/FlashCardApp",
             demo: "https://misato-seki.github.io/FlashCardApp/#",
-            img: '../assets/img/project-flashcard.png',
+            img: projectImg4,
         },
     ]
+
     return (
         <div className="projects" id="projects">
             <h1> Projects</h1>
@@ -48,19 +53,10 @@ function Projects() {
                                 key={index}
                                 {...project}
                             />
-
-                            // The above code means:
-                            // <ProjectCard
-                            //     title={project.title}
-                            //     description={project.description}
-                            //     imgUrl={project.imgUrl}
-                            // />
-
                         )
                     })
                 }
             </Row>
-
         </div>
     )
 }

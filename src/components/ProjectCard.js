@@ -8,7 +8,7 @@ function ProjectCard({ title, skills, discription, github, demo, img }) {
                 <div className='proj-text'>
                     <h2>{title}</h2>
                     <h3>{skills}</h3>
-                    <p>{discription}</p>
+                    {/* <p>{discription}</p> */}
                     <a href={github}>Github</a>
                     <a href={demo}>Demo</a>
                 </div>

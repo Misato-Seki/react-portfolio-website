@@ -4,6 +4,8 @@ import projectImg1 from '../assets/img/project-portfolio.png';
 import projectImg2 from '../assets/img/project-news.png';
 import projectImg3 from '../assets/img/project-blog.png';
 import projectImg4 from '../assets/img/project-flashcard.png';
+import TrackVisibility from "react-on-screen";
+import 'animate.css';
 
 
 function Projects() {
@@ -45,18 +47,22 @@ function Projects() {
     return (
         <div className="projects" id="projects">
             <h1> Projects</h1>
-            <Row>
-                {
-                    projects.map((project, index) => {
-                        return (
-                            <ProjectCard
-                                key={index}
-                                {...project}
-                            />
-                        )
-                    })
+            <TrackVisibility>
+                {({ isVisible }) =>
+                    <Row className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                        {
+                            projects.map((project, index) => {
+                                return (
+                                    <ProjectCard
+                                        key={index}
+                                        {...project}
+                                    />
+                                )
+                            })
+                        }
+                    </Row>
                 }
-            </Row>
+            </TrackVisibility>
         </div>
     )
 }

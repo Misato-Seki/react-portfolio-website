@@ -364,3 +364,13 @@ nav.navbar {
 .proj-text a:hover {
   font-weight: 700;
 }
+
+/* AboutMe CSS */
+
+.topic-left {
+  border-right: 1px solid black;
+}
+
+.topic-right {
+  border-left: 1px solid black;
+}

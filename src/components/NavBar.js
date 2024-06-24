@@ -32,7 +32,7 @@ function NavBar() {
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#skills">Skills</Nav.Link>
                 <Nav.Link href="#projects">Projects</Nav.Link>
-                <Nav.Link href="#aboutMe">About Me</Nav.Link>
+                <Nav.Link href="#about">About Me</Nav.Link>
             </Nav>
             <Navbar.Brand href="#home">
                 <img src={Logo} className="d-inline-block align-top" alt="logo"/>

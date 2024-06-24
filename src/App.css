@@ -252,43 +252,18 @@ nav.navbar {
   padding-right: 20px;
 }
 
-.bar {
-  background-color: white;
-  display: block;
-  height: 20px;
+.progress {
   border: 1px solid #DDDFD4;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
+  background-color: white !important;
+  height: 1.2rem !important;
 }
 
-.bar span {
-  height: 20px;
-  float: left;
-  background: linear-gradient(to bottom, #DDDFD4 0%, #7D8880 100%) ;
-  border-radius: 10px;
-  text-align: right;
-  color: white;
+.progress-bar {
+  font-size: 18px;
+  text-align: right !important;
   padding-right: 10px;
+  background: linear-gradient(to bottom, #DDDFD4 0%, #7D8880 100%);
 }
-
-.html-css {
-  width: 90%;
-  /* animation: html-css 3s; */
-}
-
-.javascript {
-  width: 85%;
-}
-
-/* @keyframes html-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-} */
 
 /* Projects CSS */
 
@@ -366,11 +341,30 @@ nav.navbar {
 }
 
 /* AboutMe CSS */
-
-.topic-left {
-  border-right: 1px solid black;
+.about {
+  margin: 100px 100px 0 100px;
 }
 
-.topic-right {
-  border-left: 1px solid black;
+.about h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
 }
+
+.about .vertical-timeline::before {
+  background: #7D8880;
+  width: 2px;
+}
+
+.about h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about h4 {
+  font-size: 20px;
+}
+
+/* Contact CSS */
+

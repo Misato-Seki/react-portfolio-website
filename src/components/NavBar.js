@@ -1,9 +1,10 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import Logo from '../assets/img/logo_cat.svg';
+import Logo from '../assets/img/logo-cat.svg';
 import LinkedIn from '../assets/img/linkedin.svg';
 import GitHub from '../assets/img/github.svg';
 import { HashLink } from 'react-router-hash-link';
 import { useEffect, useState } from 'react';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function NavBar() {
     const [scrolled, setScrolled] = useState(false);
@@ -24,9 +25,10 @@ function NavBar() {
     return (
         <Navbar expand="xl" className={scrolled ? "scrolled" : ""}>
         <Container>
-            <Navbar.Toggle aria-controls="basic-navbar-nav">
-                <span className='navbar-toggle-icon'></span>
-            </Navbar.Toggle>
+            <Navbar.Brand href="#home">
+                <img src={Logo} className="d-inline-block align-top" alt="logo"/>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
@@ -34,15 +36,12 @@ function NavBar() {
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#about">About Me</Nav.Link>
             </Nav>
-            <Navbar.Brand href="#home">
-                <img src={Logo} className="d-inline-block align-top" alt="logo"/>
-            </Navbar.Brand>
             <span className='navbar-text'>
                 <div className='social-icon'>
                     <a href='#'><img src={LinkedIn} alt="linkedin-logo" /></a>
                     <a href='#'><img src={GitHub} alt="github-logo" /></a>
                 </div>
-                <HashLink to='#connect'>
+                <HashLink to='#contact'>
                   <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
                 </HashLink>
             </span>

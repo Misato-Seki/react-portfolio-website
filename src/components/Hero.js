@@ -25,7 +25,7 @@ function Hero() {
         <section className="hero" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col lg={12} xl={7} className="col-text">
+                    <Col xl={7} className="col-text">
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -34,7 +34,7 @@ function Hero() {
                             }
                         </TrackVisibility>
                     </Col>
-                    <Col lg={12} xl={5} className="col-img">
+                    <Col xl={5} className="col-img">
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <img src={heroImg} alt="hero-img" className={isVisible ? "animate__animated animate__fadeIn" : ""} />
@@ -48,3 +48,10 @@ function Hero() {
 }
 
 export { Hero };
+
+// Col
+// xs: < 576 pixels. -> mobile(360-414)
+// sm: ≥ 576 pixels.
+// md: ≥ 768 pixels. -> tablet(768-1024)
+// lg: ≥ 992 pixels. 
+// xl: ≥ 1200 pixels. -> laptop(1366-1440), desktop(1440-1920)

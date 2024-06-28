@@ -38,8 +38,8 @@ function NavBar() {
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='#'><img src={LinkedIn} alt="linkedin-logo" /></a>
-                    <a href='#'><img src={GitHub} alt="github-logo" /></a>
+                    <a href='https://www.linkedin.com/in/misato-seki-198a16251/'><img src={LinkedIn} alt="linkedin-logo" /></a>
+                    <a href='https://github.com/Misato-Seki'><img src={GitHub} alt="github-logo" /></a>
                 </div>
                 <HashLink to='#contact'>
                   <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>

@@ -188,20 +188,20 @@ nav.navbar {
   height: 100vh;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .col-text {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   text-align: center;
   height: 100%;
 }
 
 .col-text h1 {
   font-weight: 500;
-  font-size: 65px;
+  font-size: 60px;
   letter-spacing: 1px;
 }
 
@@ -221,16 +221,43 @@ nav.navbar {
   border-right: 0.05em solid black;
 }
 
-/* mobile */
-@media screen and (max-width: 576px) {
+/* Breakpoint of Col */
+@media (max-width: 1200px) {
   .col-text h1 {
-    font-weight: 500;
     font-size: 40px;
-    letter-spacing: 1px;
+    margin-bottom: 60px;
   }
+}
 
-  .hero {
-    height: 100%;
+//* Large devices (desktops, 1024px and down) */
+@media (max-width: 1024px)  {
+  .col-text h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .col-text h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+  .col-text h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media (max-width: 320px) {
+  .col-text h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 
@@ -244,7 +271,7 @@ nav.navbar {
 
 /* Welcome CSS */
 .welcome {
-  margin-top: 100px;
+  margin-top: 100px !important;
   display: flex;
   flex-direction: column;
   align-items: center;

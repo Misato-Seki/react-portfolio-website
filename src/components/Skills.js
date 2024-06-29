@@ -2,6 +2,8 @@ import { Container, ProgressBar } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { frontendSkillSet, backendSkillSet } from "./SkillSets";
+import '../css/Default.css'
+import '../css/Skills.css'
 
 function Skills() {
     const responsive = {

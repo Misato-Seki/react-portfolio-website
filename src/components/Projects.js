@@ -1,5 +1,7 @@
 import { projectElements } from "./ProjectElements";
 import { Row, Col } from 'react-bootstrap';
+import '../css/Default.css'
+import '../css/Projects.css'
 
 
 function Projects() {

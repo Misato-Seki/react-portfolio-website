@@ -5,6 +5,8 @@ import GitHub from '../assets/img/github.svg';
 import { HashLink } from 'react-router-hash-link';
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../css/Default.css';
+import '../css/NavBar.css';
 
 function NavBar() {
     const [scrolled, setScrolled] = useState(false);

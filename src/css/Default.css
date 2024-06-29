@@ -1,0 +1,61 @@
+/* Costom Fonts */
+@font-face {
+    font-family: Inconsolata;
+    src: url('../assets/font/Inconsolata-Regular.ttf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: Inconsolata;
+    src: url('../assets/font/Inconsolata-Medium.ttf');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Inconsolata;
+    src: url('../assets/font/Inconsolata-ExtraBold.ttf');
+    font-weight: 800;
+  }
+
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    /* include padding and border within the element's total width and height */
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    /* fixed headers */
+    /* scroll-padding-top: 75px; */
+  }
+  body{
+    font-family: 'Inconsolata', 'sans-serif' !important;
+    font-weight: 400;
+    /* prevents horizontal scrolling by hiding any content that overflows */
+    overflow-x: hidden;
+    /* you can adjust its position using the top, right, bottom, and left properties */
+    position: relative;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+  p,a,li,button,ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    border: 0;
+  }
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+  }

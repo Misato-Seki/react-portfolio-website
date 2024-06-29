@@ -229,7 +229,7 @@ nav.navbar {
   }
 }
 
-//* Large devices (desktops, 1024px and down) */
+/* Large devices (desktops, 1024px and down) */
 @media (max-width: 1024px)  {
   .col-text h1 {
     font-size: 36px;

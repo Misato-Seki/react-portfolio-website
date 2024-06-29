@@ -3,6 +3,8 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { ReactComponent as WorkIcon } from '../assets/img/work.svg';
 import { ReactComponent as SchoolIcon } from '../assets/img/school.svg';
+import '../css/Default.css'
+import '../css/AboutMe.css'
 
 function AboutMe() {
     return (

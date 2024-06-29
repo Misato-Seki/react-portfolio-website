@@ -1,0 +1,77 @@
+/* Projects CSS */
+
+.projects {
+    margin-top: 10vh;
+    margin-right: clamp(1.25rem, -0.568rem + 9.09vw, 6.25rem); /* 20px - 100px */
+    margin-left: clamp(1.25rem, -0.568rem + 9.09vw, 6.25rem); /* 20px - 100px */
+  }
+  
+  .projects h1 {
+    font-weight: 700;
+    font-size: clamp(1.75rem, 1.295rem + 2.27vw, 3rem); /* 28px - 48px */
+    margin-bottom: 5vh;
+    text-align: center;
+  }
+  
+  .proj-imgbox {
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid #CFC2B1;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  
+  .proj-imgbox::before {
+    content: "";
+    position: absolute;
+    /* background: linear-gradient(to bottom, #CFC2B1, #896B44); */
+    background-color: #896B44;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s ease-in-out;
+    opacity: 0.85;
+  }
+  
+  .proj-imgbox:hover::before {
+    height: 100%;
+  }
+  
+  .proj-text {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 65%;
+    /* left: 50%; */
+    transition: 0.4s ease-in-out;
+    transform: (-50%, -50%);
+    text-align: center;
+  }
+  
+  .proj-imgbox:hover .proj-text {
+    top: 30%;
+    opacity: 1;
+  }
+  
+  .proj-text h2 {
+    font-size: clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem); /* 18px - 30px */
+    font-weight: 700;
+    color: white;
+  }
+  
+  .proj-text h3 {
+    font-style: italic;
+    font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem); /* 12px - 18px */
+    color: white;
+  }
+  
+  .proj-text a {
+    text-decoration: none;
+    font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem); /* 12px - 18px */
+    color: white;
+    margin-right: 1vw;
+  }
+  
+  .proj-text a:hover {
+    font-weight: 700;
+  }
+  

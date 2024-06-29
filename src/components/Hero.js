@@ -1,8 +1,10 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import heroImg from '../assets/img/hero.png';
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
+import '../css/Default.css'
+import '../css/Hero.css'
 
 function Hero() {
     const [text, setText] = useState('');
@@ -37,7 +39,7 @@ function Hero() {
                     <Col xl={5} className="col-img">
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <img src={heroImg} alt="hero-img" className={isVisible ? "animate__animated animate__fadeIn" : ""} />
+                                <Image src={heroImg} alt="hero-img" className={isVisible ? "animate__animated animate__fadeIn" : ""} roundedCircle/>
                             }
                         </TrackVisibility>
                     </Col>

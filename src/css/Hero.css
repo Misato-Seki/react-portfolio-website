@@ -1,0 +1,58 @@
+/* Hero CSS */
+
+.hero {
+    margin-top: 0px;
+    position: relative;
+    top: 10vh;
+    background-color: #CFC2B1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .col-text {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    height: 100%;
+  }
+  
+  .col-text h1 {
+    font-weight: 500;
+    font-size: clamp(1.875rem, 1.011rem + 4.32vw, 4.25rem); /* 30px - 68px */
+    letter-spacing: 0.08vw;
+  }
+  
+  .col-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .col-img img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .wrap {
+    border-right: 0.05em solid black;
+  }
+  
+  /* Breakpoint of Col */
+  @media (max-width: 1199px) {
+    .col-text h1 {
+      margin-bottom: 5vw;
+    }
+  }
+
+  
+  /* 
+  // xs: < 576 pixels. -> mobile(360-414)
+  // sm: ≥ 576 pixels.
+  // md: ≥ 768 pixels. -> tablet(768-1024)
+  // lg: ≥ 992 pixels. 
+  // xl: ≥ 1200 pixels. -> laptop(1366-1440), desktop(1440-1920) 
+  */

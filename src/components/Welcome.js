@@ -1,4 +1,6 @@
 import { Container } from "react-bootstrap";
+import '../css/Default.css'
+import '../css/Welcome.css'
 
 function Welcome() {
     return (

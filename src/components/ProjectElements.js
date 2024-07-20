@@ -1,7 +1,9 @@
+//image size: 2880 × 1556 pixels
 import projectImg1 from '../assets/img/project-portfolio.png';
 import projectImg2 from '../assets/img/project-news.png';
 import projectImg3 from '../assets/img/project-blog.png';
 import projectImg4 from '../assets/img/project-flashcard.png';
+import projectImg5 from '../assets/img/project-pomodoro.png';
 
 export const projectElements = [
     {
@@ -35,5 +37,13 @@ export const projectElements = [
         github: "https://github.com/Misato-Seki/FlashCardApp",
         demo: "https://misato-seki.github.io/FlashCardApp/#",
         img: projectImg4,
+    },
+    {
+        title: "Pomodoro App",
+        skills: "React Native/Expo/TypeScript",
+        discription: "",
+        github: "https://github.com/Misato-Seki/reactnative-pomodoro-app",
+        demo: "https://youtu.be/IIVlnDvEcZ4",
+        img: projectImg5,
     },
 ]

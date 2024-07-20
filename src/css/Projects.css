@@ -60,13 +60,13 @@
   
   .proj-text h3 {
     font-style: italic;
-    font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem); /* 12px - 18px */
+    font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem); /* 16px - 18px */
     color: white;
   }
   
   .proj-text a {
     text-decoration: none;
-    font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem); /* 12px - 18px */
+    font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem); /* 16px - 18px */
     color: white;
     margin-right: 1vw;
   }

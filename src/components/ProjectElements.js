@@ -4,6 +4,7 @@ import projectImg2 from '../assets/img/project-news.png';
 import projectImg3 from '../assets/img/project-blog.png';
 import projectImg4 from '../assets/img/project-flashcard.png';
 import projectImg5 from '../assets/img/project-pomodoro.png';
+import projectImg6 from '../assets/img/project-wordquiz.png';
 
 export const projectElements = [
     {
@@ -45,5 +46,13 @@ export const projectElements = [
         github: "https://github.com/Misato-Seki/reactnative-pomodoro-app",
         demo: "https://youtu.be/IIVlnDvEcZ4",
         img: projectImg5,
+    },
+    {
+        title: "Word Quiz App",
+        skills: "React/Node.js/PostgreSQL",
+        discription: "",
+        github: "https://github.com/Misato-Seki/word-quiz-app",
+        demo: "https://youtu.be/Serx-tq_-78",
+        img: projectImg6,
     },
 ]

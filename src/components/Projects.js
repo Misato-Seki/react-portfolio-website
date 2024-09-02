@@ -18,8 +18,8 @@ function Projects() {
                                     <h2>{project.title}</h2>
                                     <h3>{project.skills}</h3>
                                     {/* <p>{discription}</p> */}
-                                    <a href={project.github}>Github</a>
-                                    <a href={project.demo}>Demo</a>
+                                    <a href={project.github} target="blank">Github</a>
+                                    <a href={project.demo} target="blank">Demo</a>
                                 </div>
                             </div>
                         </Col>

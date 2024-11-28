@@ -5,6 +5,7 @@ import projectImg3 from '../assets/img/project-blog.png';
 import projectImg4 from '../assets/img/project-flashcard.png';
 import projectImg5 from '../assets/img/project-pomodoro.png';
 import projectImg6 from '../assets/img/project-wordquiz.png';
+import projectImg7 from '../assets/img/project-vfm.png';
 
 export const projectElements = [
     {
@@ -22,14 +23,6 @@ export const projectElements = [
         github: "https://github.com/Misato-Seki/News-API",
         demo: "https://misato-seki.github.io/News-API/",
         img: projectImg2,
-    },
-    {
-        title: "Blog Website",
-        skills: "Node.js/Express.js/EJS/MongoDB/CSS",
-        discription: "This project is a dynamic news website that aggregates and displays the latest news articles from various sources using an API.",
-        github: "https://github.com/Misato-Seki/Portfolio",
-        demo: "#",
-        img: projectImg3,
     },
     {
         title: "Flascard App",
@@ -54,5 +47,13 @@ export const projectElements = [
         github: "https://github.com/Misato-Seki/word-quiz-app",
         demo: "https://youtu.be/Serx-tq_-78",
         img: projectImg6,
+    },
+    {
+        title: "Virtual Farmers Market",
+        skills: "Vite/TypeScript/TailwindCSS",
+        discription: "",
+        github: "https://github.com/axdra/VFM",
+        demo: "https://main.d2oybo1hujadwl.amplifyapp.com/",
+        img: projectImg7,
     },
 ]

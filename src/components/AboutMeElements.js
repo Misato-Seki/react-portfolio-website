@@ -1,35 +1,11 @@
 export const timelineElements = [
     {
-        key: 1,
-        title: "Bachelor of Human Life and Environment",
-        place: "Nara Women's University (Nara, Japan)",
-        date: "2012 - 2016",
-        icon: 'school',
-        description: "Architectural design/history/structural analysis",
-    },
-    {
-        key: 2,
-        title: "Architectural Engineer",
-        place: "Nagano Prefecture (Nagano, Japan)",
-        date: "2016 - 2022",
-        icon: 'work',
-        description: "problem-solving/project management/creativity",
-    },
-    {
         key: 3,
         title: "Bachelor of Engineering",
         place: "Centria University of Applied Sciences (Kokkola, Finland)",
         date: "2022 - current",
         icon: 'school',
-        description: "programming skills/software development/data communication",
-    },
-    {
-        key: 4,
-        title: "Japanese Teacher",
-        place: "Kokkola Seudun Opisto (Kokkola, Finland)",
-        date: "2022 - current",
-        icon: 'work',
-        description: "communication skills/prioritize student satisfaction",
+        description: "Web Development / Software Design / Testing / Networking / Cybersecurity",
     },
     {
         key: 5,
@@ -37,7 +13,7 @@ export const timelineElements = [
         place: "Herizon (Remote)",
         date: "2024 (Jun-Aug)",
         icon: 'work',
-        description: "digital marketing tools (Google Ads)",
+        description: "Google Ads Running / Organic Social Media Marketing / Landing Page Design",
     },
     {
         key: 6,
@@ -45,6 +21,14 @@ export const timelineElements = [
         place: "Centria University/ Darmstadt University/ Mäladalen University",
         date: "2024 (Oct-Dec)",
         icon: 'school',
-        description: "created Virtual Farmers Market/frontend/team development",
+        description: "Virtual Farmers Market / Frontend / Team Development",
+    },
+    {
+        key: 6,
+        title: "Capstone Project",
+        place: "Centria University",
+        date: "2025 (Jan-Apr)",
+        icon: 'school',
+        description: "Centria Hub / Frontend / Team Development",
     },
 ]

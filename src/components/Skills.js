@@ -39,7 +39,7 @@ function Skills() {
                     )
                 })}
             </Carousel>
-            <h2>Back-End</h2>
+            <h2>Back-End etc.</h2>
             <Carousel responsive={responsive} className="skills-slider">
                 {backendSkillSet.map((skill) => {
                     return (

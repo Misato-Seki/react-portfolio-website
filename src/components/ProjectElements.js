@@ -1,59 +1,40 @@
 //image size: 2880 × 1556 pixels
-import projectImg1 from '../assets/img/project-portfolio.png';
-import projectImg2 from '../assets/img/project-news.png';
-import projectImg3 from '../assets/img/project-blog.png';
-import projectImg4 from '../assets/img/project-flashcard.png';
-import projectImg5 from '../assets/img/project-pomodoro.png';
-import projectImg6 from '../assets/img/project-wordquiz.png';
-import projectImg7 from '../assets/img/project-vfm.png';
+import projectImg1 from '../assets/img/project-centriaHub.png'
+import projectImg2 from '../assets/img/project-vfm.png';
+import projectImg3 from '../assets/img/project-wordquiz.png';
+import projectImg4 from '../assets/img/project-portfolio.png';
 
 export const projectElements = [
     {
-        title: "Porfolio Website",
-        skills: "React/React Bootstrap/CSS/Git",
-        discription: "This project is my personal portfolio website, designed to showcase my skills, projects, and experiences.",
-        github: "https://github.com/Misato-Seki/react-portfolio-website",
+        title: "Centria Hub",
+        skills: "TypeScript/React/Tailwind CSS/Next.js",
+        discription: "",
+        github: "https://github.com/Centria-Hub/centria-hub",
         demo: "#",
         img: projectImg1,
     },
     {
-        title: "News Website",
-        skills: "JavaScript/HTML/CSS/API/Bootstrap",
-        discription: "This project is a dynamic news website that aggregates and displays the latest news articles from various sources using an API.",
-        github: "https://github.com/Misato-Seki/News-API",
-        demo: "https://misato-seki.github.io/News-API/",
+        title: "Virtual Farmers Market",
+        skills: "TypeScript/React/Tailwind CSS/Vite",
+        discription: "",
+        github: "https://github.com/axdra/VFM",
+        demo: "https://vfm.axeldraws.com/",
         img: projectImg2,
     },
     {
-        title: "Flascard App",
-        skills: "HTML/CSS/JavaScript",
-        discription: "This project is a flashcard app that allows users to add, edit, and delete cards, following a tutorial video found on YouTube.",
-        github: "https://github.com/Misato-Seki/FlashCardApp",
-        demo: "https://misato-seki.github.io/FlashCardApp/#",
-        img: projectImg4,
-    },
-    {
-        title: "Pomodoro App",
-        skills: "React Native/Expo/TypeScript",
-        discription: "",
-        github: "https://github.com/Misato-Seki/reactnative-pomodoro-app",
-        demo: "https://youtu.be/IIVlnDvEcZ4",
-        img: projectImg5,
-    },
-    {
         title: "Word Quiz App",
-        skills: "React/Node.js/PostgreSQL",
+        skills: "React/JavaScript/Node.js/Express.js/PostgreSQL",
         discription: "",
         github: "https://github.com/Misato-Seki/word-quiz-app",
         demo: "https://youtu.be/Serx-tq_-78",
-        img: projectImg6,
+        img: projectImg3,
     },
     {
-        title: "Virtual Farmers Market",
-        skills: "Vite/TypeScript/TailwindCSS",
-        discription: "",
-        github: "https://github.com/axdra/VFM",
-        demo: "https://main.d2oybo1hujadwl.amplifyapp.com/",
-        img: projectImg7,
+        title: "Porfolio Website",
+        skills: "React/HTML/CSS",
+        discription: "This project is my personal portfolio website, designed to showcase my skills, projects, and experiences.",
+        github: "https://github.com/Misato-Seki/react-portfolio-website",
+        demo: "#",
+        img: projectImg4,
     },
 ]

@@ -39,13 +39,15 @@
   .proj-text {
     position: absolute;
     opacity: 0;
-    width: 100%;
+    width: 80%;  /* width を 80% に設定 */
     top: 65%;
-    /* left: 50%; */
+    left: 50%;   /* 左端を50%に設定 */
+    transform: translateX(-50%); /* 水平方向に-50%移動して中央寄せ */
     transition: 0.4s ease-in-out;
-    transform: (-50%, -50%);
     text-align: center;
-  }
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
   
   .proj-imgbox:hover .proj-text {
     top: 30%;
